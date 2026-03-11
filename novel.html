@@ -27,29 +27,55 @@
       color: #d4cbff;
     }
 
-    .notice-box {
-      border: 1px solid #3a435c;
-      padding: 12px;
-      margin-bottom: 20px;
-      background-color: #111625;
-    }
+   .notice-box {
+  border-left: 4px solid #b84a4a;
+  border-top: 1px solid #5a2a2a;
+  border-right: 1px solid #5a2a2a;
+  border-bottom: 1px solid #5a2a2a;
+  padding: 14px 16px;
+  margin-bottom: 24px;
+  background-color: #181018;
+  color: #f3e9e9;
+  box-shadow: 0 0 0 1px rgba(184, 74, 74, 0.15);
+}
 
-    .news-box {
-      max-height: 8em;
-      overflow-y: auto;
-      border: 1px solid #3a435c;
-      padding: 8px;
-      background-color: #111625;
-    }
+.notice-box p {
+  margin: 0;
+}
 
-    .news-box ul {
-      margin: 0;
-      padding-left: 1.5em;
-    }
+.notice-box p + p {
+  margin-top: 8px;
+}
 
-    .news-box li {
-      line-height: 1.6;
-    }
+.news-box {
+  max-height: 8em;
+  overflow-y: auto;
+  padding: 10px 12px;
+  background-color: #0f1320;
+  border: 1px solid #232a3d;
+  color: #cfd6e6;
+}
+
+.news-box ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.news-box li {
+  line-height: 1.6;
+}
+
+.news-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.news-box::-webkit-scrollbar-thumb {
+  background-color: #2d3550;
+}
+
+.news-box::-webkit-scrollbar-track {
+  background-color: #111625;
+}
   </style>
 </head>
 <body>
