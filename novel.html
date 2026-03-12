@@ -12,6 +12,7 @@
       padding: 24px;
       line-height: 1.8;
       font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+      position: relative;
     }
 
     h1, h2 {
@@ -21,72 +22,84 @@
 
     a {
       color: #b8a7ff;
-       text-decoration: none;
+      text-decoration: none;
     }
 
     a:hover {
       color: #d4cbff;
-       text-decoration: none;
+      text-decoration: none;
     }
 
-   .notice-box {
-  border-left: 4px solid #b84a4a;
-  border-top: 1px solid #5a2a2a;
-  border-right: 1px solid #5a2a2a;
-  border-bottom: 1px solid #5a2a2a;
-  padding: 14px 16px;
-  margin-bottom: 24px;
-  background-color: #181018;
-  color: #f3e9e9;
-  box-shadow: 0 0 0 1px rgba(184, 74, 74, 0.15);
-}
+    .notice-box {
+      border-left: 4px solid #b84a4a;
+      border-top: 1px solid #5a2a2a;
+      border-right: 1px solid #5a2a2a;
+      border-bottom: 1px solid #5a2a2a;
+      padding: 14px 16px;
+      margin-bottom: 24px;
+      background-color: #181018;
+      color: #f3e9e9;
+      box-shadow: 0 0 0 1px rgba(184, 74, 74, 0.15);
+    }
 
-.notice-box p {
-  margin: 0;
-}
+    .notice-box p {
+      margin: 0;
+    }
 
-.notice-box p + p {
-  margin-top: 8px;
-}
+    .notice-box p + p {
+      margin-top: 8px;
+    }
 
-.news-box {
-  max-height: 8em;
-  overflow-y: auto;
-  padding: 10px 12px;
-  background-color: #0f1320;
-  border: 1px solid #232a3d;
-  color: #cfd6e6;
-}
+    .news-box {
+      max-height: 8em;
+      overflow-y: auto;
+      padding: 10px 12px;
+      background-color: #0f1320;
+      border: 1px solid #232a3d;
+      color: #cfd6e6;
+    }
 
-.news-box ul {
-  margin: 0;
-  padding-left: 1.2em;
-}
+    .news-box ul {
+      margin: 0;
+      padding-left: 1.2em;
+    }
 
-.news-box li {
-  line-height: 1.6;
-}
+    .news-box li {
+      line-height: 1.6;
+    }
 
-.news-box::-webkit-scrollbar {
-  width: 6px;
-}
+    .news-box::-webkit-scrollbar {
+      width: 6px;
+    }
 
-.news-box::-webkit-scrollbar-thumb {
-  background-color: #2d3550;
-}
+    .news-box::-webkit-scrollbar-thumb {
+      background-color: #2d3550;
+    }
 
-.news-box::-webkit-scrollbar-track {
-  background-color: #111625;
-}
+    .news-box::-webkit-scrollbar-track {
+      background-color: #111625;
+    }
+
+    .hidden-spot {
+      position: absolute;
+      top: 70px;
+      right: 40px;
+      width: 180px;
+      height: 140px;
+      z-index: 10;
+      background: transparent;
+    }
   </style>
 </head>
 <body>
   <h1>異物ノヴァ</h1>
-  
-  <p>異物ノヴァは、自分の中に残り続けた感情や景色を、物語として形にしていくための名前です。<br>
-明るいものも、苦しいものも、静かなものも、その時に書きたいと思えたものを大事にしながら残していきます。<br>
-作品ごとに空気は変わっても、そこにある感覚だけは嘘なく置いていきたいと思っています。<br>
-ここでは、そうして生まれた小説をまとめていきます。</p>
+
+  <p>
+    異物ノヴァは、自分の中に残り続けた感情や景色を、物語として形にしていくための名前です。<br>
+    明るいものも、苦しいものも、静かなものも、その時に書きたいと思えたものを大事にしながら残していきます。<br>
+    作品ごとに空気は変わっても、そこにある感覚だけは嘘なく置いていきたいと思っています。<br>
+    ここでは、そうして生まれた小説をまとめていきます。
+  </p>
 
   <div class="notice-box">
     <p>※注意</p>
@@ -96,16 +109,16 @@
     </p>
   </div>
 
+  <h2>作品一覧</h2>
   <p>
-<h2>作品一覧</h2>
-<p>
-  <a href="blawhi.html">
-    社畜の俺が転生した異世界ファンタジーはやはりブラックだったのでぶっ壊してホワイトにしてみた
-  </a>
-</p>
+    <a href="blawhi.html">
+      社畜の俺が転生した異世界ファンタジーはやはりブラックだったのでぶっ壊してホワイトにしてみた
+    </a>
+  </p>
 
-<h2>創作支援</h2>
-<p><a href="support.html">異物ノヴァ創作支援室</a></p>
+  <h2>創作支援</h2>
+  <p><a href="support.html">異物ノヴァ創作支援室</a></p>
+
   <h2>お知らせ</h2>
   <div class="news-box">
     <ul>
@@ -118,11 +131,27 @@
       <li>2026/03/05 第12話を公開</li>
     </ul>
   </div>
-  
-  <p><a href="https://x.com/ibutu_nova?s=21&t=oe3JylyzOH2-p5yGov2e9g">Xへ</a></p>
 
-  
-    <p><a href="index.html">総合トップへ戻る</a></p>
-  
+  <p><a href="https://x.com/ibutu_nova?s=21&t=oe3JylyzOH2-p5yGov2e9g">Xへ</a></p>
+  <p><a href="index.html">総合トップへ戻る</a></p>
+
+  <div class="hidden-spot" id="hiddenSpot" aria-label="hidden spot"></div>
+
+  <script>
+    (function () {
+      const target = "himto2.html";
+      const needTaps = 15;
+      let taps = 0;
+
+      const spot = document.getElementById("hiddenSpot");
+
+      spot.addEventListener("click", function () {
+        taps += 1;
+        if (taps >= needTaps) {
+          window.location.href = target;
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
