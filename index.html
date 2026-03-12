@@ -170,5 +170,21 @@ a:hover {
       <li>2026/03/11 サイト開設しました</li>
     </ul>
   </div>
+  <script>
+  (function () {
+    const key = "secret_reload_count_index";
+    const target = "caldine.html";
+    const limit = 10;
+
+    let count = Number(localStorage.getItem(key) || 0);
+    count += 1;
+    localStorage.setItem(key, count);
+
+    if (count >= limit) {
+      localStorage.removeItem(key);
+      window.location.href = target;
+    }
+  })();
+</script>
 </body>
 </html>
