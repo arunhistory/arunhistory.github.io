@@ -20,27 +20,87 @@
 
     .box {
       padding: 24px;
+      max-width: 640px;
+      width: 100%;
     }
 
     h1 {
       margin: 0 0 0.8em 0;
       font-size: 2rem;
-      letter-spacing: 0.08em;
       font-family: "Yu Mincho", "Hiragino Mincho ProN", "MS PMincho", serif;
     }
 
     p {
-      margin: 0;
+      margin: 0 0 1em 0;
       line-height: 1.8;
       font-size: 1rem;
-      color: #cfd6f0;
+    }
+
+    input {
+      width: 220px;
+      max-width: 80%;
+      padding: 10px 12px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 18px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .message {
+      margin-top: 14px;
+      min-height: 1.8em;
+      color: #ffd6d6;
     }
   </style>
 </head>
 <body>
   <div class="box">
     <h1>Forever</h1>
-    <p>この先は、まだ準備中です。</p>
+    <p>第1作品の主人公のランクは？</p>
+
+    <input type="password" id="passwordInput" placeholder="答えを入力">
+    <br>
+    <button id="submitButton">進む</button>
+
+    <p class="message" id="message"></p>
   </div>
+
+  <script>
+    (function () {
+      const correctPassword = "Z";
+      const nextPage = "blawhi-01-00.html";
+
+      const input = document.getElementById("passwordInput");
+      const button = document.getElementById("submitButton");
+      const message = document.getElementById("message");
+
+      function checkPassword() {
+        const value = input.value.trim().toUpperCase();
+
+        if (value === correctPassword) {
+          window.location.href = nextPage;
+        } else {
+          message.textContent = "違います。";
+        }
+      }
+
+      button.addEventListener("click", checkPassword);
+
+      input.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          checkPassword();
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
