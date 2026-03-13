@@ -61,20 +61,34 @@
       background-color: #fff;
     }
 
-    .tag-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 12px;
-      margin-bottom: 14px;
-    }
+  .tag-group {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px 10px;
+  margin-bottom: 14px;
+}
 
-    .tag-group label {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-weight: normal;
-      margin-bottom: 0;
-    }
+.tag-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+.tag-group input[type="checkbox"] {
+  flex-shrink: 0;
+  margin: 0;
+}
+
+@media (min-width: 700px) {
+  .tag-group {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px 14px;
+  }
+}
 
     .button-row {
       display: flex;
