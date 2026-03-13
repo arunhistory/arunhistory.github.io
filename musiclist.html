@@ -61,10 +61,10 @@
       background-color: #fff;
     }
 
-  .tag-group {
+ .tag-group {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 6px 10px;
+  gap: 6px 12px;
   margin-bottom: 14px;
 }
 
@@ -74,8 +74,9 @@
   gap: 6px;
   margin: 0;
   font-weight: normal;
-  line-height: 1.4;
-  word-break: keep-all;
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .tag-group input[type="checkbox"] {
@@ -83,10 +84,9 @@
   margin: 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .tag-group {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 8px 14px;
   }
 }
 
