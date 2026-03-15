@@ -51,6 +51,17 @@
     .date-line {
       color: #777;
     }
+    
+    .sample-player {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 40px;
+}
+
+.sample-player audio {
+  width: 100%;
+  max-width: 520px;
+}
 
     .download-box {
       border: 1px solid #ccc;
@@ -85,10 +96,15 @@
   <h2>試し聴き</h2>
 <p>本楽曲の一部を試聴できます。</p>
 
-<audio controls>
-  <source src="First Breath sample.mp3" type="audio/mpeg">
-  お使いのブラウザは音声再生に対応していません。
-</audio>
+<h2>試し聴き</h2>
+<p>本楽曲の一部を試聴できます。</p>
+
+<div class="sample-player">
+  <audio controls>
+    <source src="First%20Breath%20sample.mp3" type="audio/mpeg">
+    お使いのブラウザは音声再生に対応していません。
+  </audio>
+</div>
 
   <h2>YouTube</h2>
   <p style="text-align: center;">coming soon……</p>
